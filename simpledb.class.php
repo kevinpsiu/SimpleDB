@@ -1,6 +1,14 @@
 <?php
+/**
+ * SimpleDB - a lightweight and easy-to-use wrapper for simple database operations using PDO in PHP.
+ * 
+ * See below for detailed usage and README.md file for more information.
+ *
+ * @author Kevin P. Siu
+ * @copyright Copyright (c) 2012 Kevin P. Siu
+ * @license http://www.opensource.org/licenses/mit-license.php Released under the MIT License
+ **/
 class SimpleDB{
-
     private $pdo;   //PDO instance
     
     public function __construct($dsn, $user='', $pass=''){
