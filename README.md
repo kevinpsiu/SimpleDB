@@ -35,9 +35,9 @@ Features
 * Parameter binding (to hopefully prevent some forms of SQL injection)
 * Simple one-line queries
 * Utility functions:
-** upsert (insert or update on duplicate) - also supports composite primary keys
-** count rows
-** get single column values
+    * upsert (insert or update on duplicate) - also supports composite primary keys
+    * count rows
+    * get single column values
 
 List of methods
 -----------------
@@ -49,15 +49,18 @@ the key corresponds with the column name.
 The output for the methods is  what you expect it to be (true/false for queries,
 array of values for select, int for count, etc.).
 
-* insert(string $table, array $data)
-* select(string $table, array $conditions, [string $sortby, boolean $sortdesc])
-* select_single_row(string $table, array $conditions, [string $sortby, boolean $sortdesc])
-* select_single_value(string $table, array $conditions, string $column, [string $sortby, boolean $sortdesc])
-* count(string $table, array $conditions)
-* update(string $table, array $data, array $conditions)
-* upsert(string $table, array $data, array $primarykey)
-* delete(string $table, array $conditions)
+    insert(string $table, array $data)
 
+    select(string $table, array $conditions, [string $sortby, boolean $sortdesc])
 
+    select_single_row(string $table, array $conditions, [string $sortby, boolean $sortdesc])
 
+    select_single_value(string $table, array $conditions, string $column, [string $sortby, boolean $sortdesc])
 
+    count(string $table, array $conditions)
+
+    update(string $table, array $data, array $conditions)
+
+    upsert(string $table, array $data, array $primarykey)
+
+    delete(string $table, array $conditions)
